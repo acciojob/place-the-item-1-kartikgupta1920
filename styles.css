@@ -1,2 +1,38 @@
 
 /* Your CSS Code here. */
+/* https://www.svgrepo.com/show/345221/three-dots.svg */
+.container {
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	flex-wrap : wrap;
+	font-size : 40px;
+}
+#container2{
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	
+	
+}
+
+.flexbox {
+	height : 100px;
+	width : 100px;	
+} 
+
+.green {
+	height : 100px;
+	width: 100px;
+	background-color : green;
+}
+
+#green {
+	background-color : green;
+}
+#red {
+	background-color : red;
+}
+#blue {
+	background-color : blue;
+}
