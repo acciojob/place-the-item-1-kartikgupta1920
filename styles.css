@@ -1,38 +1,48 @@
-
-/* Your CSS Code here. */
-/* https://www.svgrepo.com/show/345221/three-dots.svg */
-.container {
-	display : flex;
-	flex-direction : row;
-	justify-content : space-between;
-	flex-wrap : wrap;
-	font-size : 40px;
-}
-#container2{
-	display : flex;
-	flex-direction : row;
-	justify-content : space-between;
-	
-	
+/* CSS for the holder (container) */
+.holder {
+  display: flex;                /* Enable Flexbox */
+  justify-content: space-between; /* Space between items, with the first and last items touching the edges */
+  align-items: center;          /* Align items vertically (centered) */
+  flex-wrap: wrap;              /* Allow items to wrap onto the next row */
+  gap: 10px;                    /* Add space between items */
+  width: 100%;                  /* Ensure the container spans the full width */
+  border: 2px solid black;      /* Optional border for visualization */
+  padding: 10px;                /* Optional padding inside the container */
+  box-sizing: border-box;       /* Include padding in width calculation */
 }
 
-.flexbox {
-	height : 100px;
-	width : 100px;	
-} 
-
-.green {
-	height : 100px;
-	width: 100px;
-	background-color : green;
+/* CSS for the individual items */
+.item {
+  flex: 0 1 100px;              /* Prevent items from shrinking too small; set a base width */
+  height: 100px;                /* Set a fixed height for items */
+  text-align: center;           /* Center-align text inside the item */
+  line-height: 100px;           /* Vertically center text */
+  color: black;                 /* Text color */
+  font-size: 24px;              /* Font size */
+  font-weight: bold;            /* Make text bold */
+  border: 2px solid black;      /* Border around items */
 }
 
-#green {
-	background-color : green;
+.item:nth-child(1) {
+  background-color: red;        /* Red background for item 1 */
 }
-#red {
-	background-color : red;
+
+.item:nth-child(2) {
+  background-color: blue;       /* Blue background for item 2 */
 }
-#blue {
-	background-color : blue;
+
+.item:nth-child(3) {
+  background-color: green;      /* Green background for item 3 */
 }
+.item:nth-child(4) {
+  background-color: green;      /* Green background for item 3 */
+}.item:nth-child(5) {
+  background-color: green;      /* Green background for item 3 */
+}.item:nth-child(6) {
+  background-color: green;      /* Green background for item 3 */
+}
+.item:nth-child(7) {
+  background-color: green;      /* Green background for item 3 */
+}
+
+/* Add more item-specific styles if needed */
